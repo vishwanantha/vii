@@ -1,14 +1,6 @@
 import bcrypt from 'bcryptjs'
 import Jwt  from 'jsonwebtoken'
- const hashPassword=async(password)=>{
-    const salt =await bcrypt.genSalt(10)
-    const hash =await bcrypt.hash(password,salt)
-    return hash
-
- }
- const hashCompare=async (password,hash)=>{
-   return await bcrypt.compare(password,hash);
-   }
+ 
    const creatToken=async(payload)=>{
       const token= await Jwt.sign(payload,process.env.JWT-SECRET,{
          expiresIn:process.env.JWT-EXPIRE
