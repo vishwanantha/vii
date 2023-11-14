@@ -20,7 +20,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.4",
     "nodemailer": "^6.9.7",
-    "package-name": "^0.6.10",
+    "package-name": "^0.6.0",
     "react-icons": "^4.11.0",
     "uuid": "^9.0.1"
   },
